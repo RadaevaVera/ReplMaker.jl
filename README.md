@@ -71,8 +71,7 @@ julia> initrepl(parse_to_expr,
                 start_key=')',
                 mode_name="Expr_mode",
                 valid_input_checker=complete_julia)
-┌ Warning: REPL key ')' overwritten.
-└ @ ReplMaker ~/.julia/packages/ReplMaker/pwo5w/src/ReplMaker.jl:86
+
 REPL mode Expr_mode initialized. Press ) to enter and backspace to exit.
 
 Expr> function f(x)

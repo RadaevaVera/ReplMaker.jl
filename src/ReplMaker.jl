@@ -95,7 +95,6 @@ function initrepl(parser::Function;
     normalized_start_key = LineEdit.normalize_key(start_key)
     alt = get_nested_key(julia_mode.keymap_dict, normalized_start_key)
     if alt !== nothing
-        @warn "REPL key '$start_key' overwritten."
         alt = deepcopy(alt)
     else
         alt = (s, args...) -> LineEdit.edit_insert(s, normalized_start_key)
